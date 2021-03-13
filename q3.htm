@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>q3</title>
+	<script>
+		function calcu(){
+			var Num1=parseFloat(document.getElementById('Num1').value);
+			var Num2=parseFloat(document.getElementById('Num2').value);
+			var oper=document.getElementById('operators').value;
+			if (oper==='+') {
+				document.getElementById('result').value=Num1+Num2;
+			}
+			if (oper==='-') {
+				document.getElementById('result').value=Num1-Num2;
+			}
+			if (oper==='*') {
+				document.getElementById('result').value=Num1*Num2;
+			}
+			if (oper==='/') {
+				document.getElementById('result').value=Num1/Num2;
+			}
+		}
+	</script>
+</head>
+<body>
+
+	<input type="text" id="Num1"><br>
+	<input type="text" id="Num2"><br>
+	<select id="operators">
+		<option value="+">+</option>
+		<option value="-">-</option>
+		<option value="*">*</option>
+		<option value="/">/</option>
+	</select>
+     <button onclick="calcu()">=</button>
+	<input type="text" id="result">
+
+
+</body>
+</html>
